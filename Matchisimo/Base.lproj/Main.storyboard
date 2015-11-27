@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="flips: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05f-zi-zaz">
+                                <rect key="frame" x="20" y="559" width="125" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="NRd-uj-Pgb"/>
+                                    <constraint firstAttribute="height" constant="21" id="n9G-1a-uK1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NRd-uj-Pgb"/>
+                                        <exclude reference="n9G-1a-uK1"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="NRd-uj-Pgb"/>
+                                        <include reference="n9G-1a-uK1"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuM-FI-tme">
+                                <rect key="frame" x="268" y="252" width="64" height="96"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="0Lu-Gl-PBh"/>
+                                    <constraint firstAttribute="height" constant="96" id="dOo-dG-oU9"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0Lu-Gl-PBh"/>
+                                        <exclude reference="dOo-dG-oU9"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="0Lu-Gl-PBh"/>
+                                        <include reference="dOo-dG-oU9"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qmn-GN-XtK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.077207822250000002" green="0.64429086540000002" blue="0.074340182150000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="05f-zi-zaz" secondAttribute="bottom" constant="20" id="bBY-Nm-Rx8"/>
+                            <constraint firstItem="tuM-FI-tme" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eQE-7v-SG0"/>
+                            <constraint firstItem="05f-zi-zaz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jA0-Dh-75j"/>
+                            <constraint firstItem="tuM-FI-tme" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ut8-vE-iVY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="eQE-7v-SG0"/>
+                                <exclude reference="ut8-vE-iVY"/>
+                                <exclude reference="jA0-Dh-75j"/>
+                                <exclude reference="bBY-Nm-Rx8"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="eQE-7v-SG0"/>
+                                <include reference="ut8-vE-iVY"/>
+                                <include reference="jA0-Dh-75j"/>
+                                <include reference="bBY-Nm-Rx8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="flipsLabel" destination="05f-zi-zaz" id="bwM-X6-reX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="311"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blueBack.jpg" width="190" height="266"/>
+    </resources>
+</document>

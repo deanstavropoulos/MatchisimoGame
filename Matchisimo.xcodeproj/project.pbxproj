@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA272D291C092AD100DD7867 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = FA272D281C092AD100DD7867 /* CardMatchingGame.m */; settings = {ASSET_TAGS = (); }; };
 		FA654A0F1C08DC2100AE8BC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA654A0E1C08DC2100AE8BC7 /* main.m */; };
 		FA654A121C08DC2100AE8BC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA654A111C08DC2100AE8BC7 /* AppDelegate.m */; };
 		FA654A151C08DC2100AE8BC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA654A141C08DC2100AE8BC7 /* ViewController.m */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA272D271C092AD100DD7867 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = SOURCE_ROOT; };
+		FA272D281C092AD100DD7867 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = SOURCE_ROOT; };
 		FA654A0A1C08DC2100AE8BC7 /* Matchisimo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchisimo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA654A0E1C08DC2100AE8BC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA654A101C08DC2100AE8BC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,6 +138,8 @@
 		FA654A441C08DE4800AE8BC7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA272D271C092AD100DD7867 /* CardMatchingGame.h */,
+				FA272D281C092AD100DD7867 /* CardMatchingGame.m */,
 				FA654A351C08DD3400AE8BC7 /* Deck.h */,
 				FA654A361C08DD3400AE8BC7 /* Deck.m */,
 				FA654A3E1C08DDD200AE8BC7 /* PlayingCard.h */,
@@ -262,6 +267,7 @@
 				FA654A371C08DD3400AE8BC7 /* Deck.m in Sources */,
 				FA654A431C08DDEF00AE8BC7 /* PlayingCardDeck.m in Sources */,
 				FA654A151C08DC2100AE8BC7 /* ViewController.m in Sources */,
+				FA272D291C092AD100DD7867 /* CardMatchingGame.m in Sources */,
 				FA654A401C08DDD200AE8BC7 /* PlayingCard.m in Sources */,
 				FA654A1B1C08DC2100AE8BC7 /* Matchisimo.xcdatamodeld in Sources */,
 				FA654A121C08DC2100AE8BC7 /* AppDelegate.m in Sources */,

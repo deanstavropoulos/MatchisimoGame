@@ -14,6 +14,6 @@
 @property (nonatomic) NSUInteger rank; //no pointer because of primitive type
 
 + (NSArray *)validSuits;
-+(NSUInteger) maxRank;
++ (NSUInteger) maxRank;
 
 @end

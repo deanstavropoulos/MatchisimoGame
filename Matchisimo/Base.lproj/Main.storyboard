@@ -41,24 +41,383 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5B-hT-dh1">
+                                <rect key="frame" x="268" y="252" width="64" height="96"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="Afx-2R-KZb"/>
+                                    <constraint firstAttribute="height" constant="96" id="M2i-W5-ya6"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="Tk8-ya-GBf"/>
+                                    <constraint firstAttribute="width" constant="64" id="lh6-2B-w3n"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Afx-2R-KZb"/>
+                                        <exclude reference="M2i-W5-ya6"/>
+                                        <exclude reference="Tk8-ya-GBf"/>
+                                        <exclude reference="lh6-2B-w3n"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Afx-2R-KZb"/>
+                                        <include reference="M2i-W5-ya6"/>
+                                        <include reference="Tk8-ya-GBf"/>
+                                        <include reference="lh6-2B-w3n"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aaQ-wg-fby"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60S-nN-JGf">
+                                <rect key="frame" x="268" y="252" width="64" height="96"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="16r-zf-P5H"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="dqu-1u-RGQ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="ebJ-JN-w27"/>
+                                    <constraint firstAttribute="width" constant="64" id="odR-dl-Uwv"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="16r-zf-P5H"/>
+                                        <exclude reference="dqu-1u-RGQ"/>
+                                        <exclude reference="ebJ-JN-w27"/>
+                                        <exclude reference="odR-dl-Uwv"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="16r-zf-P5H"/>
+                                        <include reference="dqu-1u-RGQ"/>
+                                        <include reference="ebJ-JN-w27"/>
+                                        <include reference="odR-dl-Uwv"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nxp-Wi-EDh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wap-os-Xxo">
+                                <rect key="frame" x="268" y="252" width="64" height="96"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="3Yc-nH-NpB"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="GTW-br-bmN"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="dJC-i6-P4X"/>
+                                    <constraint firstAttribute="height" constant="96" id="qjU-Fj-Ohg"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3Yc-nH-NpB"/>
+                                        <exclude reference="GTW-br-bmN"/>
+                                        <exclude reference="dJC-i6-P4X"/>
+                                        <exclude reference="qjU-Fj-Ohg"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3Yc-nH-NpB"/>
+                                        <include reference="GTW-br-bmN"/>
+                                        <include reference="dJC-i6-P4X"/>
+                                        <include reference="qjU-Fj-Ohg"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="grV-S8-2f6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUi-zX-uBl">
+                                <rect key="frame" x="268" y="252" width="64" height="96"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="3Jj-gf-RSX"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="fJe-92-KvR"/>
+                                    <constraint firstAttribute="height" constant="96" id="h58-Y8-jJW"/>
+                                    <constraint firstAttribute="width" constant="64" id="zbH-PD-SfG"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3Jj-gf-RSX"/>
+                                        <exclude reference="fJe-92-KvR"/>
+                                        <exclude reference="h58-Y8-jJW"/>
+                                        <exclude reference="zbH-PD-SfG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3Jj-gf-RSX"/>
+                                        <include reference="fJe-92-KvR"/>
+                                        <include reference="h58-Y8-jJW"/>
+                                        <include reference="zbH-PD-SfG"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LXW-sQ-pG1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGD-aY-Ife">
+                                <rect key="frame" x="268" y="252" width="64" height="96"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="DMC-Wf-YbI"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="IQp-C7-kzk"/>
+                                    <constraint firstAttribute="height" constant="96" id="N5p-5K-PDj"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="tb5-PP-6JX"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DMC-Wf-YbI"/>
+                                        <exclude reference="IQp-C7-kzk"/>
+                                        <exclude reference="N5p-5K-PDj"/>
+                                        <exclude reference="tb5-PP-6JX"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="DMC-Wf-YbI"/>
+                                        <include reference="IQp-C7-kzk"/>
+                                        <include reference="N5p-5K-PDj"/>
+                                        <include reference="tb5-PP-6JX"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TKc-0o-Xwt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmu-fE-U9f">
+                                <rect key="frame" x="268" y="252" width="64" height="96"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="J7H-Ni-EUk"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="P4O-Bs-RbH"/>
+                                    <constraint firstAttribute="height" constant="96" id="i40-fN-XnG"/>
+                                    <constraint firstAttribute="width" constant="64" id="lrb-Ja-8op"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="J7H-Ni-EUk"/>
+                                        <exclude reference="P4O-Bs-RbH"/>
+                                        <exclude reference="i40-fN-XnG"/>
+                                        <exclude reference="lrb-Ja-8op"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="J7H-Ni-EUk"/>
+                                        <include reference="P4O-Bs-RbH"/>
+                                        <include reference="i40-fN-XnG"/>
+                                        <include reference="lrb-Ja-8op"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Okx-0F-a6x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8J-3L-liY">
+                                <rect key="frame" x="268" y="252" width="64" height="96"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="ODx-Ej-iGX"/>
+                                    <constraint firstAttribute="height" constant="96" id="QSb-Vh-Rfi"/>
+                                    <constraint firstAttribute="width" constant="64" id="VUp-32-l1B"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="ibv-AO-LHt"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ODx-Ej-iGX"/>
+                                        <exclude reference="QSb-Vh-Rfi"/>
+                                        <exclude reference="VUp-32-l1B"/>
+                                        <exclude reference="ibv-AO-LHt"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ODx-Ej-iGX"/>
+                                        <include reference="QSb-Vh-Rfi"/>
+                                        <include reference="VUp-32-l1B"/>
+                                        <include reference="ibv-AO-LHt"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XmU-TF-wnd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2M-eg-xLm">
+                                <rect key="frame" x="268" y="252" width="64" height="96"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="LFt-s3-PZG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="Xop-On-igz"/>
+                                    <constraint firstAttribute="height" constant="96" id="ad2-zR-8YM"/>
+                                    <constraint firstAttribute="width" constant="64" id="s2m-We-fxh"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LFt-s3-PZG"/>
+                                        <exclude reference="Xop-On-igz"/>
+                                        <exclude reference="ad2-zR-8YM"/>
+                                        <exclude reference="s2m-We-fxh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="LFt-s3-PZG"/>
+                                        <include reference="Xop-On-igz"/>
+                                        <include reference="ad2-zR-8YM"/>
+                                        <include reference="s2m-We-fxh"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IzM-sh-NS5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8L5-aA-B7T">
+                                <rect key="frame" x="268" y="252" width="64" height="96"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="T7z-Gd-dbE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="VRr-w5-Qfa"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="W9c-3d-vPr"/>
+                                    <constraint firstAttribute="width" constant="64" id="mH0-Jw-BZd"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="T7z-Gd-dbE"/>
+                                        <exclude reference="VRr-w5-Qfa"/>
+                                        <exclude reference="W9c-3d-vPr"/>
+                                        <exclude reference="mH0-Jw-BZd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="T7z-Gd-dbE"/>
+                                        <include reference="VRr-w5-Qfa"/>
+                                        <include reference="W9c-3d-vPr"/>
+                                        <include reference="mH0-Jw-BZd"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x9K-m1-Mh1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="098-XH-b2E">
+                                <rect key="frame" x="268" y="252" width="64" height="96"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="Akw-Iq-Ycc"/>
+                                    <constraint firstAttribute="width" constant="64" id="Gc6-uQ-t14"/>
+                                    <constraint firstAttribute="height" constant="96" id="KPQ-wG-J5g"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="tat-oQ-5HU"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Akw-Iq-Ycc"/>
+                                        <exclude reference="Gc6-uQ-t14"/>
+                                        <exclude reference="KPQ-wG-J5g"/>
+                                        <exclude reference="tat-oQ-5HU"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Akw-Iq-Ycc"/>
+                                        <include reference="Gc6-uQ-t14"/>
+                                        <include reference="KPQ-wG-J5g"/>
+                                        <include reference="tat-oQ-5HU"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbZ-jg-AnA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpR-4k-okW">
+                                <rect key="frame" x="268" y="252" width="64" height="96"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="21O-Eh-XQ0"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="fY2-p6-RCQ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="l8b-Pk-5ax"/>
+                                    <constraint firstAttribute="width" constant="64" id="tao-B3-0lF"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="21O-Eh-XQ0"/>
+                                        <exclude reference="fY2-p6-RCQ"/>
+                                        <exclude reference="l8b-Pk-5ax"/>
+                                        <exclude reference="tao-B3-0lF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="21O-Eh-XQ0"/>
+                                        <include reference="fY2-p6-RCQ"/>
+                                        <include reference="l8b-Pk-5ax"/>
+                                        <include reference="tao-B3-0lF"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U57-sh-mCv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ed-1W-pUE">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="Qvw-Xm-Uhn"/>
+                                    <constraint firstAttribute="height" constant="21" id="Xpq-wG-sfW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Qvw-Xm-Uhn"/>
+                                        <exclude reference="Xpq-wG-sfW"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Qvw-Xm-Uhn"/>
+                                        <include reference="Xpq-wG-sfW"/>
+                                    </mask>
+                                </variation>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuM-FI-tme">
                                 <rect key="frame" x="268" y="252" width="64" height="96"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="0Lu-Gl-PBh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="ZBK-vh-HlY"/>
                                     <constraint firstAttribute="height" constant="96" id="dOo-dG-oU9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="sOc-y2-pJz"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="blueBack.jpg"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="0Lu-Gl-PBh"/>
+                                        <exclude reference="ZBK-vh-HlY"/>
                                         <exclude reference="dOo-dG-oU9"/>
+                                        <exclude reference="sOc-y2-pJz"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="0Lu-Gl-PBh"/>
+                                        <include reference="ZBK-vh-HlY"/>
                                         <include reference="dOo-dG-oU9"/>
+                                        <include reference="sOc-y2-pJz"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -69,35 +428,145 @@
                         <animations/>
                         <color key="backgroundColor" red="0.077207822250000002" green="0.64429086540000002" blue="0.074340182150000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="h5B-hT-dh1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="1vf-1X-lr5"/>
+                            <constraint firstItem="xUi-zX-uBl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2Zz-BI-if8"/>
+                            <constraint firstItem="pGD-aY-Ife" firstAttribute="leading" secondItem="xUi-zX-uBl" secondAttribute="trailing" constant="31" id="7Kp-wb-ocD"/>
+                            <constraint firstItem="8L5-aA-B7T" firstAttribute="leading" secondItem="C2M-eg-xLm" secondAttribute="trailing" constant="31" id="7RQ-4V-kWT"/>
+                            <constraint firstItem="vpR-4k-okW" firstAttribute="leading" secondItem="098-XH-b2E" secondAttribute="trailing" constant="33" id="Bnq-RM-av9"/>
+                            <constraint firstItem="4Ed-1W-pUE" firstAttribute="top" secondItem="8L5-aA-B7T" secondAttribute="bottom" constant="134" id="COO-3r-JFc"/>
+                            <constraint firstItem="098-XH-b2E" firstAttribute="top" secondItem="Dmu-fE-U9f" secondAttribute="bottom" constant="25" id="Cam-f2-15L"/>
+                            <constraint firstItem="Dmu-fE-U9f" firstAttribute="top" secondItem="60S-nN-JGf" secondAttribute="bottom" constant="33" id="DdJ-fX-Eeh"/>
+                            <constraint firstItem="G8J-3L-liY" firstAttribute="leading" secondItem="Dmu-fE-U9f" secondAttribute="trailing" constant="33" id="EGn-oC-iBv"/>
+                            <constraint firstItem="tuM-FI-tme" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FhA-47-6bm"/>
+                            <constraint firstItem="G8J-3L-liY" firstAttribute="top" secondItem="Wap-os-Xxo" secondAttribute="bottom" constant="33" id="I8o-qy-TEH"/>
+                            <constraint firstItem="4Ed-1W-pUE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IQe-67-GeU"/>
+                            <constraint firstItem="C2M-eg-xLm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Kbu-qR-vYW"/>
+                            <constraint firstItem="pGD-aY-Ife" firstAttribute="top" secondItem="h5B-hT-dh1" secondAttribute="bottom" constant="33" id="Ps4-dR-k8j"/>
+                            <constraint firstItem="8L5-aA-B7T" firstAttribute="top" secondItem="pGD-aY-Ife" secondAttribute="bottom" constant="25" id="SOO-Cd-2et"/>
+                            <constraint firstItem="C2M-eg-xLm" firstAttribute="top" secondItem="xUi-zX-uBl" secondAttribute="bottom" constant="25" id="V4J-jd-tSc"/>
+                            <constraint firstItem="Wap-os-Xxo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Vzb-vR-fpe"/>
+                            <constraint firstItem="h5B-hT-dh1" firstAttribute="leading" secondItem="tuM-FI-tme" secondAttribute="trailing" constant="31" id="XIg-aV-xVn"/>
+                            <constraint firstItem="60S-nN-JGf" firstAttribute="leading" secondItem="h5B-hT-dh1" secondAttribute="trailing" constant="40" id="ZEO-X0-wND"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="05f-zi-zaz" secondAttribute="bottom" constant="20" id="bBY-Nm-Rx8"/>
-                            <constraint firstItem="tuM-FI-tme" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eQE-7v-SG0"/>
-                            <constraint firstItem="05f-zi-zaz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jA0-Dh-75j"/>
-                            <constraint firstItem="tuM-FI-tme" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ut8-vE-iVY"/>
+                            <constraint firstItem="xUi-zX-uBl" firstAttribute="top" secondItem="tuM-FI-tme" secondAttribute="bottom" constant="33" id="c5g-6v-213"/>
+                            <constraint firstItem="60S-nN-JGf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dB8-7K-WSz"/>
+                            <constraint firstItem="vpR-4k-okW" firstAttribute="top" secondItem="G8J-3L-liY" secondAttribute="bottom" constant="25" id="gSy-p5-yed"/>
+                            <constraint firstItem="Wap-os-Xxo" firstAttribute="leading" secondItem="60S-nN-JGf" secondAttribute="trailing" constant="33" id="oJL-Un-2rE"/>
+                            <constraint firstItem="tuM-FI-tme" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="oab-zU-v5x"/>
+                            <constraint firstItem="Dmu-fE-U9f" firstAttribute="leading" secondItem="pGD-aY-Ife" secondAttribute="trailing" constant="40" id="s80-Sv-67H"/>
+                            <constraint firstItem="098-XH-b2E" firstAttribute="leading" secondItem="8L5-aA-B7T" secondAttribute="trailing" constant="40" id="teP-58-4p9"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="h5B-hT-dh1"/>
+                                <exclude reference="60S-nN-JGf"/>
+                                <exclude reference="Wap-os-Xxo"/>
+                                <exclude reference="xUi-zX-uBl"/>
+                                <exclude reference="pGD-aY-Ife"/>
+                                <exclude reference="Dmu-fE-U9f"/>
+                                <exclude reference="G8J-3L-liY"/>
+                                <exclude reference="C2M-eg-xLm"/>
+                                <exclude reference="8L5-aA-B7T"/>
+                                <exclude reference="098-XH-b2E"/>
+                                <exclude reference="vpR-4k-okW"/>
+                                <exclude reference="4Ed-1W-pUE"/>
+                            </mask>
                             <mask key="constraints">
-                                <exclude reference="eQE-7v-SG0"/>
-                                <exclude reference="ut8-vE-iVY"/>
-                                <exclude reference="jA0-Dh-75j"/>
+                                <exclude reference="FhA-47-6bm"/>
+                                <exclude reference="oab-zU-v5x"/>
+                                <exclude reference="1vf-1X-lr5"/>
+                                <exclude reference="XIg-aV-xVn"/>
+                                <exclude reference="2Zz-BI-if8"/>
+                                <exclude reference="c5g-6v-213"/>
+                                <exclude reference="7Kp-wb-ocD"/>
+                                <exclude reference="Ps4-dR-k8j"/>
+                                <exclude reference="ZEO-X0-wND"/>
+                                <exclude reference="dB8-7K-WSz"/>
+                                <exclude reference="DdJ-fX-Eeh"/>
+                                <exclude reference="s80-Sv-67H"/>
+                                <exclude reference="Kbu-qR-vYW"/>
+                                <exclude reference="V4J-jd-tSc"/>
+                                <exclude reference="7RQ-4V-kWT"/>
+                                <exclude reference="SOO-Cd-2et"/>
+                                <exclude reference="Vzb-vR-fpe"/>
+                                <exclude reference="oJL-Un-2rE"/>
+                                <exclude reference="EGn-oC-iBv"/>
+                                <exclude reference="I8o-qy-TEH"/>
+                                <exclude reference="Cam-f2-15L"/>
+                                <exclude reference="teP-58-4p9"/>
+                                <exclude reference="Bnq-RM-av9"/>
+                                <exclude reference="gSy-p5-yed"/>
+                                <exclude reference="COO-3r-JFc"/>
+                                <exclude reference="IQe-67-GeU"/>
                                 <exclude reference="bBY-Nm-Rx8"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="h5B-hT-dh1"/>
+                                <include reference="60S-nN-JGf"/>
+                                <include reference="Wap-os-Xxo"/>
+                                <include reference="xUi-zX-uBl"/>
+                                <include reference="pGD-aY-Ife"/>
+                                <include reference="Dmu-fE-U9f"/>
+                                <include reference="G8J-3L-liY"/>
+                                <include reference="C2M-eg-xLm"/>
+                                <include reference="8L5-aA-B7T"/>
+                                <include reference="098-XH-b2E"/>
+                                <include reference="vpR-4k-okW"/>
+                                <include reference="4Ed-1W-pUE"/>
+                            </mask>
                             <mask key="constraints">
-                                <include reference="eQE-7v-SG0"/>
-                                <include reference="ut8-vE-iVY"/>
-                                <include reference="jA0-Dh-75j"/>
+                                <include reference="FhA-47-6bm"/>
+                                <include reference="oab-zU-v5x"/>
+                                <include reference="1vf-1X-lr5"/>
+                                <include reference="XIg-aV-xVn"/>
+                                <include reference="2Zz-BI-if8"/>
+                                <include reference="c5g-6v-213"/>
+                                <include reference="7Kp-wb-ocD"/>
+                                <include reference="Ps4-dR-k8j"/>
+                                <include reference="ZEO-X0-wND"/>
+                                <include reference="dB8-7K-WSz"/>
+                                <include reference="DdJ-fX-Eeh"/>
+                                <include reference="s80-Sv-67H"/>
+                                <include reference="Kbu-qR-vYW"/>
+                                <include reference="V4J-jd-tSc"/>
+                                <include reference="7RQ-4V-kWT"/>
+                                <include reference="SOO-Cd-2et"/>
+                                <include reference="Vzb-vR-fpe"/>
+                                <include reference="oJL-Un-2rE"/>
+                                <include reference="EGn-oC-iBv"/>
+                                <include reference="I8o-qy-TEH"/>
+                                <include reference="Cam-f2-15L"/>
+                                <include reference="teP-58-4p9"/>
+                                <include reference="Bnq-RM-av9"/>
+                                <include reference="gSy-p5-yed"/>
+                                <include reference="COO-3r-JFc"/>
+                                <include reference="IQe-67-GeU"/>
                                 <include reference="bBY-Nm-Rx8"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="flipsLabel" destination="05f-zi-zaz" id="bwM-X6-reX"/>
+                        <outlet property="scoreLabel" destination="4Ed-1W-pUE" id="HAf-VD-I8V"/>
+                        <outletCollection property="cardButtons" destination="tuM-FI-tme" id="hyA-96-sqZ"/>
+                        <outletCollection property="cardButtons" destination="h5B-hT-dh1" id="p1J-bH-wpz"/>
+                        <outletCollection property="cardButtons" destination="60S-nN-JGf" id="n4Z-fz-7Ng"/>
+                        <outletCollection property="cardButtons" destination="Wap-os-Xxo" id="cOa-op-frs"/>
+                        <outletCollection property="cardButtons" destination="xUi-zX-uBl" id="T0l-E4-m2w"/>
+                        <outletCollection property="cardButtons" destination="pGD-aY-Ife" id="iwL-Kw-b00"/>
+                        <outletCollection property="cardButtons" destination="Dmu-fE-U9f" id="XkJ-qg-Lor"/>
+                        <outletCollection property="cardButtons" destination="G8J-3L-liY" id="ZPb-Ls-RC4"/>
+                        <outletCollection property="cardButtons" destination="C2M-eg-xLm" id="RWR-aW-iJj"/>
+                        <outletCollection property="cardButtons" destination="8L5-aA-B7T" id="eSR-Mb-2rd"/>
+                        <outletCollection property="cardButtons" destination="098-XH-b2E" id="Ymp-BE-7RT"/>
+                        <outletCollection property="cardButtons" destination="vpR-4k-okW" id="tFE-hm-iZb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="311"/>
+            <point key="canvasLocation" x="195" y="286"/>
         </scene>
     </scenes>
     <resources>

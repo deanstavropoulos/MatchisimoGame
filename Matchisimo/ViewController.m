@@ -32,6 +32,17 @@
     return _game;
 }
 
+
+- (IBAction)touchResetButton:(UIButton *)sender {
+
+   _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count] usingDeck:[self myDeck]];
+    
+    //if cards are flipped to front, flip them back
+    
+    self.scoreLabel.text= [NSString stringWithFormat:@"Score: 0"];
+    
+}
+
 - (IBAction)touchCardButton:(UIButton *)sender {
     
     int cardIndex = [self.cardButtons indexOfObject:sender];

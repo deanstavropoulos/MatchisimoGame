@@ -16,7 +16,7 @@
 //setter is not public for score
 @property (nonatomic, readonly) NSInteger score;
 
--(void) chooseCardAtIndex:(NSUInteger)index;
+-(void)chooseCardAtIndex:(NSUInteger)index forOption:(int)gameType;
 -(Card *) cardAtIndex:(NSUInteger)index;
 
 @end

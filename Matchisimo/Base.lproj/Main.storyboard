@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,364 +14,282 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="flips: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05f-zi-zaz">
-                                <rect key="frame" x="20" y="559" width="125" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="flips: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05f-zi-zaz">
+                                <rect key="frame" x="173" y="433" width="127" height="46"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="139" id="gpL-5L-m23"/>
-                                    <constraint firstAttribute="height" constant="46" id="kMA-01-teh"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" red="1" green="0.69019607839999997" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="gpL-5L-m23"/>
-                                        <exclude reference="kMA-01-teh"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="gpL-5L-m23"/>
-                                        <include reference="kMA-01-teh"/>
-                                    </mask>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5B-hT-dh1">
-                                <rect key="frame" x="268" y="252" width="64" height="96"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="svd-B4-C17"/>
-                                    <constraint firstAttribute="height" constant="96" id="x2Q-NQ-F0g"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="blueBack.jpg"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="svd-B4-C17"/>
-                                        <exclude reference="x2Q-NQ-F0g"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="svd-B4-C17"/>
-                                        <include reference="x2Q-NQ-F0g"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aaQ-wg-fby"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60S-nN-JGf">
-                                <rect key="frame" x="268" y="252" width="64" height="96"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="LLI-jy-Y9K"/>
-                                    <constraint firstAttribute="height" constant="96" id="l4C-o7-R6U"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="blueBack.jpg"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="LLI-jy-Y9K"/>
-                                        <exclude reference="l4C-o7-R6U"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="LLI-jy-Y9K"/>
-                                        <include reference="l4C-o7-R6U"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nxp-Wi-EDh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wap-os-Xxo">
-                                <rect key="frame" x="268" y="252" width="64" height="96"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="LM9-IL-VrU"/>
-                                    <constraint firstAttribute="width" constant="64" id="aqm-VD-Qth"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="blueBack.jpg"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="LM9-IL-VrU"/>
-                                        <exclude reference="aqm-VD-Qth"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="LM9-IL-VrU"/>
-                                        <include reference="aqm-VD-Qth"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="grV-S8-2f6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUi-zX-uBl">
-                                <rect key="frame" x="268" y="252" width="64" height="96"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="nqD-Xp-yyg"/>
-                                    <constraint firstAttribute="height" constant="96" id="z5Z-RF-7yl"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="blueBack.jpg"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="nqD-Xp-yyg"/>
-                                        <exclude reference="z5Z-RF-7yl"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="nqD-Xp-yyg"/>
-                                        <include reference="z5Z-RF-7yl"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LXW-sQ-pG1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGD-aY-Ife">
-                                <rect key="frame" x="268" y="252" width="64" height="96"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="2sW-Ww-m8W"/>
-                                    <constraint firstAttribute="width" constant="64" id="Rtv-SE-DH2"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="blueBack.jpg"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="2sW-Ww-m8W"/>
-                                        <exclude reference="Rtv-SE-DH2"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="2sW-Ww-m8W"/>
-                                        <include reference="Rtv-SE-DH2"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TKc-0o-Xwt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmu-fE-U9f">
-                                <rect key="frame" x="268" y="252" width="64" height="96"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="0p1-Id-xuF"/>
-                                    <constraint firstAttribute="height" constant="96" id="BeL-3i-Is7"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="blueBack.jpg"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="0p1-Id-xuF"/>
-                                        <exclude reference="BeL-3i-Is7"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="0p1-Id-xuF"/>
-                                        <include reference="BeL-3i-Is7"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Okx-0F-a6x"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8J-3L-liY">
-                                <rect key="frame" x="268" y="252" width="64" height="96"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="RKF-ml-cxn"/>
-                                    <constraint firstAttribute="height" constant="96" id="qcD-aB-EDJ"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="blueBack.jpg"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="RKF-ml-cxn"/>
-                                        <exclude reference="qcD-aB-EDJ"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="RKF-ml-cxn"/>
-                                        <include reference="qcD-aB-EDJ"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XmU-TF-wnd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2M-eg-xLm">
-                                <rect key="frame" x="268" y="252" width="64" height="96"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="9PA-L9-yZj"/>
-                                    <constraint firstAttribute="width" constant="64" id="pkb-x1-ybY"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="blueBack.jpg"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="9PA-L9-yZj"/>
-                                        <exclude reference="pkb-x1-ybY"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="9PA-L9-yZj"/>
-                                        <include reference="pkb-x1-ybY"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IzM-sh-NS5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8L5-aA-B7T">
-                                <rect key="frame" x="268" y="252" width="64" height="96"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="SGW-Qd-3DB"/>
-                                    <constraint firstAttribute="height" constant="96" id="cEi-Uv-YEb"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="blueBack.jpg"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="SGW-Qd-3DB"/>
-                                        <exclude reference="cEi-Uv-YEb"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="SGW-Qd-3DB"/>
-                                        <include reference="cEi-Uv-YEb"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x9K-m1-Mh1"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ed-1W-pUE">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="XFx-cB-fA7"/>
-                                    <constraint firstAttribute="width" constant="168" id="uBV-Dj-i8S"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" red="1" green="0.69019607839999997" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="XFx-cB-fA7"/>
-                                        <exclude reference="uBV-Dj-i8S"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="XFx-cB-fA7"/>
-                                        <include reference="uBV-Dj-i8S"/>
-                                    </mask>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="098-XH-b2E">
-                                <rect key="frame" x="268" y="252" width="64" height="96"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="QZ7-87-UO7"/>
-                                    <constraint firstAttribute="width" constant="64" id="gxp-Jv-fLn"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="blueBack.jpg"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="QZ7-87-UO7"/>
-                                        <exclude reference="gxp-Jv-fLn"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="QZ7-87-UO7"/>
-                                        <include reference="gxp-Jv-fLn"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbZ-jg-AnA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuM-FI-tme">
-                                <rect key="frame" x="268" y="252" width="64" height="96"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="RBu-eE-NMG"/>
-                                    <constraint firstAttribute="width" constant="64" id="hpF-zb-J3Z"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="blueBack.jpg"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="RBu-eE-NMG"/>
-                                        <exclude reference="hpF-zb-J3Z"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="RBu-eE-NMG"/>
-                                        <include reference="hpF-zb-J3Z"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qmn-GN-XtK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpR-4k-okW">
-                                <rect key="frame" x="268" y="252" width="64" height="96"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="FNa-2w-24l"/>
-                                    <constraint firstAttribute="height" constant="96" id="xVS-bY-gbX"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="blueBack.jpg"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="FNa-2w-24l"/>
-                                        <exclude reference="xVS-bY-gbX"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="FNa-2w-24l"/>
-                                        <include reference="xVS-bY-gbX"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U57-sh-mCv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKx-F7-mzf">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="M4O-Tz-fPR"/>
-                                    <constraint firstAttribute="width" constant="100" id="QWj-6A-aLZ"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Reset"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="M4O-Tz-fPR"/>
-                                        <exclude reference="QWj-6A-aLZ"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="M4O-Tz-fPR"/>
-                                        <include reference="QWj-6A-aLZ"/>
-                                    </mask>
-                                </variation>
+                                <color key="textColor" red="1" green="0.69019607839999997" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5B-hT-dh1">
+                                <rect key="frame" x="68" y="70" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uoj-98-hYX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ed-1W-pUE">
+                                <rect key="frame" x="20" y="430" width="151" height="51"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="1" green="0.69019607839999997" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuM-FI-tme">
+                                <rect key="frame" x="20" y="70" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xpa-FU-U92"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vdI-0s-XXa">
+                                <rect key="frame" x="100" y="20" width="121" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="2-card"/>
+                                    <segment title="3-card"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="segmentedControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="B6L-wP-thp"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60S-nN-JGf">
+                                <rect key="frame" x="116" y="70" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HRE-8w-t5H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgG-42-i84">
+                                <rect key="frame" x="212" y="70" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gyl-ji-2b8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwy-NC-y6R">
+                                <rect key="frame" x="164" y="70" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MrZ-8b-4dP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZd-nY-yCe">
+                                <rect key="frame" x="260" y="70" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="baF-DI-rsA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yk-ec-Be7">
+                                <rect key="frame" x="68" y="143" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vG6-47-D7v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5A-EZ-Ta8">
+                                <rect key="frame" x="20" y="143" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5de-V0-BNb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmG-eI-NsZ">
+                                <rect key="frame" x="116" y="143" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nH1-Lq-yVb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gE6-9G-HgL">
+                                <rect key="frame" x="212" y="143" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jfA-O9-ZJn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbu-r8-4la">
+                                <rect key="frame" x="164" y="143" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pxq-mc-g5q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeF-kQ-CFz">
+                                <rect key="frame" x="260" y="143" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xIh-g7-e4N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFn-r5-bkH">
+                                <rect key="frame" x="68" y="216" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bhQ-5M-tK2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHn-Fa-L2R">
+                                <rect key="frame" x="20" y="216" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xSk-Cs-SLC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzg-v9-4xG">
+                                <rect key="frame" x="116" y="216" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iOX-je-gZc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKu-MX-Bzy">
+                                <rect key="frame" x="212" y="216" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2y4-qT-xKu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEg-Tq-rNe">
+                                <rect key="frame" x="164" y="216" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qpf-jt-tTD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNP-ew-9bJ">
+                                <rect key="frame" x="260" y="216" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hQu-Ig-Yai"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FK7-te-Mlt">
+                                <rect key="frame" x="68" y="289" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ujF-31-f7C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D50-3l-Mya">
+                                <rect key="frame" x="20" y="289" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CaB-01-cfy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNj-lr-w6a">
+                                <rect key="frame" x="116" y="289" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pZj-4i-5nx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCQ-em-nzx">
+                                <rect key="frame" x="212" y="289" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xB4-Yh-snf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFr-lz-KVj">
+                                <rect key="frame" x="164" y="289" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xJF-PM-lfS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sB9-af-Bjn">
+                                <rect key="frame" x="260" y="289" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O3n-kp-HV6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAD-Mf-opv">
+                                <rect key="frame" x="68" y="362" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Qt-pZ-WVi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vj-yi-hO3">
+                                <rect key="frame" x="20" y="362" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fz8-Jz-brG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0S-ok-NgK">
+                                <rect key="frame" x="116" y="362" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b1I-0y-e7O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpb-bh-KcC">
+                                <rect key="frame" x="212" y="362" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tbu-BY-zNj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZo-5T-yzF">
+                                <rect key="frame" x="164" y="362" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="49m-D3-42B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INh-gF-EjA">
+                                <rect key="frame" x="260" y="362" width="40" height="65"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="blueBack.jpg"/>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mza-0D-2UU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKx-F7-mzf">
+                                <rect key="frame" x="110" y="504" width="100" height="50"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Deal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="touchResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5wO-Cf-liU"/>
                                 </connections>
@@ -380,163 +297,46 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.077207822250000002" green="0.64429086540000002" blue="0.074340182150000003" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="4Ed-1W-pUE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="109" id="11x-b7-OUV"/>
-                            <constraint firstItem="05f-zi-zaz" firstAttribute="top" secondItem="4Ed-1W-pUE" secondAttribute="bottom" constant="3" id="3NW-az-Sk6"/>
-                            <constraint firstItem="C2M-eg-xLm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3QV-Ic-NbN"/>
-                            <constraint firstItem="tuM-FI-tme" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="4pk-N6-1bJ"/>
-                            <constraint firstItem="C2M-eg-xLm" firstAttribute="top" secondItem="xUi-zX-uBl" secondAttribute="bottom" constant="30" id="5HE-Mp-JT9"/>
-                            <constraint firstItem="4Ed-1W-pUE" firstAttribute="top" secondItem="098-XH-b2E" secondAttribute="bottom" constant="22" id="5wr-CF-DwI"/>
-                            <constraint firstItem="G8J-3L-liY" firstAttribute="leading" secondItem="Dmu-fE-U9f" secondAttribute="trailing" constant="31" id="7yU-uu-v8Q"/>
-                            <constraint firstItem="h5B-hT-dh1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="BoO-I4-hz6"/>
-                            <constraint firstItem="60S-nN-JGf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="C7B-k5-oaC"/>
-                            <constraint firstItem="098-XH-b2E" firstAttribute="top" secondItem="Dmu-fE-U9f" secondAttribute="bottom" constant="30" id="FTB-Rw-RDw"/>
-                            <constraint firstItem="OKx-F7-mzf" firstAttribute="top" secondItem="05f-zi-zaz" secondAttribute="bottom" constant="8" id="Gtz-XY-dtY"/>
-                            <constraint firstItem="Dmu-fE-U9f" firstAttribute="top" secondItem="60S-nN-JGf" secondAttribute="bottom" constant="30" id="Imo-8B-4xb"/>
-                            <constraint firstItem="h5B-hT-dh1" firstAttribute="leading" secondItem="tuM-FI-tme" secondAttribute="trailing" constant="32" id="JEM-1L-Cdv">
-                                <variation key="widthClass=compact" constant="28"/>
-                            </constraint>
-                            <constraint firstItem="vpR-4k-okW" firstAttribute="top" secondItem="G8J-3L-liY" secondAttribute="bottom" constant="30" id="NwG-LF-drg"/>
-                            <constraint firstItem="Wap-os-Xxo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="O3d-4P-3kB"/>
-                            <constraint firstItem="tuM-FI-tme" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="O9J-5r-1rr"/>
-                            <constraint firstItem="pGD-aY-Ife" firstAttribute="leading" secondItem="xUi-zX-uBl" secondAttribute="trailing" constant="28" id="OOb-Un-mqh"/>
-                            <constraint firstItem="Wap-os-Xxo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Qgd-SO-XDc"/>
-                            <constraint firstItem="xUi-zX-uBl" firstAttribute="top" secondItem="tuM-FI-tme" secondAttribute="bottom" constant="30" id="XSw-1L-pam"/>
-                            <constraint firstItem="OKx-F7-mzf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="130" id="bMN-jX-PLT">
-                                <variation key="widthClass=compact" constant="124"/>
-                            </constraint>
-                            <constraint firstItem="xUi-zX-uBl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cQN-tj-SVV"/>
-                            <constraint firstItem="vpR-4k-okW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="cvl-yy-Jlk"/>
-                            <constraint firstItem="G8J-3L-liY" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dXg-G1-kbm"/>
-                            <constraint firstItem="vpR-4k-okW" firstAttribute="leading" secondItem="098-XH-b2E" secondAttribute="trailing" constant="31" id="dZU-kF-gIY"/>
-                            <constraint firstItem="8L5-aA-B7T" firstAttribute="top" secondItem="pGD-aY-Ife" secondAttribute="bottom" constant="30" id="o2I-Qh-rxe"/>
-                            <constraint firstItem="G8J-3L-liY" firstAttribute="top" secondItem="Wap-os-Xxo" secondAttribute="bottom" constant="30" id="pdv-xd-QHt"/>
-                            <constraint firstItem="05f-zi-zaz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="124" id="qQN-zj-g5U"/>
-                            <constraint firstItem="8L5-aA-B7T" firstAttribute="leading" secondItem="C2M-eg-xLm" secondAttribute="trailing" constant="28" id="rYQ-ke-n0Q"/>
-                            <constraint firstItem="pGD-aY-Ife" firstAttribute="top" secondItem="h5B-hT-dh1" secondAttribute="bottom" constant="30" id="w1m-RL-IhD"/>
-                            <constraint firstItem="Wap-os-Xxo" firstAttribute="leading" secondItem="60S-nN-JGf" secondAttribute="trailing" constant="37" id="xXY-X5-XMf">
-                                <variation key="widthClass=compact" constant="31"/>
-                            </constraint>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="h5B-hT-dh1"/>
-                                <exclude reference="60S-nN-JGf"/>
-                                <exclude reference="Wap-os-Xxo"/>
-                                <exclude reference="xUi-zX-uBl"/>
-                                <exclude reference="pGD-aY-Ife"/>
-                                <exclude reference="Dmu-fE-U9f"/>
-                                <exclude reference="G8J-3L-liY"/>
-                                <exclude reference="C2M-eg-xLm"/>
-                                <exclude reference="8L5-aA-B7T"/>
-                                <exclude reference="4Ed-1W-pUE"/>
-                                <exclude reference="098-XH-b2E"/>
-                                <exclude reference="vpR-4k-okW"/>
-                                <exclude reference="OKx-F7-mzf"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="4pk-N6-1bJ"/>
-                                <exclude reference="O9J-5r-1rr"/>
-                                <exclude reference="BoO-I4-hz6"/>
-                                <exclude reference="JEM-1L-Cdv"/>
-                                <exclude reference="XSw-1L-pam"/>
-                                <exclude reference="cQN-tj-SVV"/>
-                                <exclude reference="OOb-Un-mqh"/>
-                                <exclude reference="w1m-RL-IhD"/>
-                                <exclude reference="C7B-k5-oaC"/>
-                                <exclude reference="Imo-8B-4xb"/>
-                                <exclude reference="3QV-Ic-NbN"/>
-                                <exclude reference="5HE-Mp-JT9"/>
-                                <exclude reference="O3d-4P-3kB"/>
-                                <exclude reference="Qgd-SO-XDc"/>
-                                <exclude reference="xXY-X5-XMf"/>
-                                <exclude reference="o2I-Qh-rxe"/>
-                                <exclude reference="rYQ-ke-n0Q"/>
-                                <exclude reference="7yU-uu-v8Q"/>
-                                <exclude reference="dXg-G1-kbm"/>
-                                <exclude reference="pdv-xd-QHt"/>
-                                <exclude reference="FTB-Rw-RDw"/>
-                                <exclude reference="NwG-LF-drg"/>
-                                <exclude reference="cvl-yy-Jlk"/>
-                                <exclude reference="dZU-kF-gIY"/>
-                                <exclude reference="11x-b7-OUV"/>
-                                <exclude reference="5wr-CF-DwI"/>
-                                <exclude reference="3NW-az-Sk6"/>
-                                <exclude reference="qQN-zj-g5U"/>
-                                <exclude reference="Gtz-XY-dtY"/>
-                                <exclude reference="bMN-jX-PLT"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="h5B-hT-dh1"/>
-                                <include reference="60S-nN-JGf"/>
-                                <include reference="Wap-os-Xxo"/>
-                                <include reference="xUi-zX-uBl"/>
-                                <include reference="pGD-aY-Ife"/>
-                                <include reference="Dmu-fE-U9f"/>
-                                <include reference="G8J-3L-liY"/>
-                                <include reference="C2M-eg-xLm"/>
-                                <include reference="8L5-aA-B7T"/>
-                                <include reference="4Ed-1W-pUE"/>
-                                <include reference="098-XH-b2E"/>
-                                <include reference="vpR-4k-okW"/>
-                                <include reference="OKx-F7-mzf"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="4pk-N6-1bJ"/>
-                                <include reference="O9J-5r-1rr"/>
-                                <include reference="BoO-I4-hz6"/>
-                                <include reference="JEM-1L-Cdv"/>
-                                <include reference="XSw-1L-pam"/>
-                                <include reference="cQN-tj-SVV"/>
-                                <include reference="OOb-Un-mqh"/>
-                                <include reference="w1m-RL-IhD"/>
-                                <include reference="C7B-k5-oaC"/>
-                                <include reference="Imo-8B-4xb"/>
-                                <include reference="3QV-Ic-NbN"/>
-                                <include reference="5HE-Mp-JT9"/>
-                                <include reference="O3d-4P-3kB"/>
-                                <include reference="Qgd-SO-XDc"/>
-                                <include reference="xXY-X5-XMf"/>
-                                <include reference="o2I-Qh-rxe"/>
-                                <include reference="rYQ-ke-n0Q"/>
-                                <include reference="7yU-uu-v8Q"/>
-                                <include reference="dXg-G1-kbm"/>
-                                <include reference="pdv-xd-QHt"/>
-                                <include reference="FTB-Rw-RDw"/>
-                                <include reference="NwG-LF-drg"/>
-                                <include reference="cvl-yy-Jlk"/>
-                                <include reference="dZU-kF-gIY"/>
-                                <include reference="11x-b7-OUV"/>
-                                <include reference="5wr-CF-DwI"/>
-                                <include reference="3NW-az-Sk6"/>
-                                <include reference="qQN-zj-g5U"/>
-                                <include reference="Gtz-XY-dtY"/>
-                                <include reference="bMN-jX-PLT"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="flipsLabel" destination="05f-zi-zaz" id="bwM-X6-reX"/>
                         <outlet property="scoreLabel" destination="4Ed-1W-pUE" id="HAf-VD-I8V"/>
-                        <outletCollection property="cardButtons" destination="tuM-FI-tme" id="hyA-96-sqZ"/>
-                        <outletCollection property="cardButtons" destination="h5B-hT-dh1" id="p1J-bH-wpz"/>
-                        <outletCollection property="cardButtons" destination="60S-nN-JGf" id="n4Z-fz-7Ng"/>
-                        <outletCollection property="cardButtons" destination="Wap-os-Xxo" id="cOa-op-frs"/>
-                        <outletCollection property="cardButtons" destination="xUi-zX-uBl" id="T0l-E4-m2w"/>
-                        <outletCollection property="cardButtons" destination="pGD-aY-Ife" id="iwL-Kw-b00"/>
-                        <outletCollection property="cardButtons" destination="Dmu-fE-U9f" id="XkJ-qg-Lor"/>
-                        <outletCollection property="cardButtons" destination="G8J-3L-liY" id="ZPb-Ls-RC4"/>
-                        <outletCollection property="cardButtons" destination="C2M-eg-xLm" id="RWR-aW-iJj"/>
-                        <outletCollection property="cardButtons" destination="8L5-aA-B7T" id="eSR-Mb-2rd"/>
-                        <outletCollection property="cardButtons" destination="098-XH-b2E" id="Ymp-BE-7RT"/>
-                        <outletCollection property="cardButtons" destination="vpR-4k-okW" id="tFE-hm-iZb"/>
+                        <outlet property="segmentedControl" destination="vdI-0s-XXa" id="49R-wt-S3a"/>
+                        <outletCollection property="cardButtons" destination="tuM-FI-tme" id="aMJ-qL-8cd"/>
+                        <outletCollection property="cardButtons" destination="h5B-hT-dh1" id="2hP-L9-uzs"/>
+                        <outletCollection property="cardButtons" destination="60S-nN-JGf" id="QOL-N2-vTv"/>
+                        <outletCollection property="cardButtons" destination="Xwy-NC-y6R" id="l8K-G3-eSp"/>
+                        <outletCollection property="cardButtons" destination="rgG-42-i84" id="bak-7c-3sH"/>
+                        <outletCollection property="cardButtons" destination="yZd-nY-yCe" id="0zU-zX-Tib"/>
+                        <outletCollection property="cardButtons" destination="z5A-EZ-Ta8" id="vDO-lC-nWG"/>
+                        <outletCollection property="cardButtons" destination="0yk-ec-Be7" id="qQc-yL-gym"/>
+                        <outletCollection property="cardButtons" destination="bmG-eI-NsZ" id="Isn-5H-U4m"/>
+                        <outletCollection property="cardButtons" destination="gbu-r8-4la" id="iCC-t0-2ky"/>
+                        <outletCollection property="cardButtons" destination="gE6-9G-HgL" id="PQZ-ct-YMJ"/>
+                        <outletCollection property="cardButtons" destination="YeF-kQ-CFz" id="gxH-fP-WC3"/>
+                        <outletCollection property="cardButtons" destination="qHn-Fa-L2R" id="kTZ-07-Um9"/>
+                        <outletCollection property="cardButtons" destination="LFn-r5-bkH" id="zxA-2p-02Y"/>
+                        <outletCollection property="cardButtons" destination="lzg-v9-4xG" id="rdS-4K-7lJ"/>
+                        <outletCollection property="cardButtons" destination="LEg-Tq-rNe" id="e4c-1H-kdZ"/>
+                        <outletCollection property="cardButtons" destination="SKu-MX-Bzy" id="erg-B4-KDO"/>
+                        <outletCollection property="cardButtons" destination="CNP-ew-9bJ" id="q4v-iW-hT2"/>
+                        <outletCollection property="cardButtons" destination="D50-3l-Mya" id="p8h-Mf-F1a"/>
+                        <outletCollection property="cardButtons" destination="FK7-te-Mlt" id="waU-F5-yue"/>
+                        <outletCollection property="cardButtons" destination="yNj-lr-w6a" id="E4z-Dp-qts"/>
+                        <outletCollection property="cardButtons" destination="JFr-lz-KVj" id="5w1-pq-TMv"/>
+                        <outletCollection property="cardButtons" destination="fCQ-em-nzx" id="B5c-5x-6Ad"/>
+                        <outletCollection property="cardButtons" destination="sB9-af-Bjn" id="YyB-aA-aFc"/>
+                        <outletCollection property="cardButtons" destination="6Vj-yi-hO3" id="pGl-2W-rGq"/>
+                        <outletCollection property="cardButtons" destination="nAD-Mf-opv" id="lda-5C-8z1"/>
+                        <outletCollection property="cardButtons" destination="y0S-ok-NgK" id="ULq-Wf-ENz"/>
+                        <outletCollection property="cardButtons" destination="lZo-5T-yzF" id="V6b-ef-Wih"/>
+                        <outletCollection property="cardButtons" destination="hpb-bh-KcC" id="Epe-t5-1vC"/>
+                        <outletCollection property="cardButtons" destination="INh-gF-EjA" id="4Yw-sq-7jb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="195" y="286"/>
+            <point key="canvasLocation" x="29" y="302"/>
         </scene>
     </scenes>
     <resources>

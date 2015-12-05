@@ -13,18 +13,104 @@
 -(int)match:(NSArray *) otherCards
 {
     int score = 0;
+    
     if ([otherCards count] ==1)
     {
         //firstObject returns firstObject in an array
-        PlayingCard *otherCard = [otherCards firstObject];
+        id card = [otherCards firstObject];
         
-        if ([self.suit isEqualToString:otherCard.suit])
-        {
-            score = 1;
+        if ([card isKindOfClass:[PlayingCard class]]) {
+            PlayingCard *otherCard = (PlayingCard *) card;
+        
+            if ([self.suit isEqualToString:otherCard.suit])
+                {
+                    score = 1;
+                }
+            else if (self.rank == otherCard.rank)
+            {
+                score = 4;
+            }
         }
-        else if (self.rank == otherCard.rank)
+    }
+    if ([otherCards count] ==2)
+    {
+        //firstObject returns firstObject in an array
+        id card = [otherCards firstObject];
+        id card2 = [otherCards lastObject];
+        
+        if ([card isKindOfClass:[PlayingCard class]] && [card2 isKindOfClass:[PlayingCard class]] )
         {
-            score = 4;
+            PlayingCard *firstCard = (PlayingCard *) card;
+            PlayingCard *secondCard = (PlayingCard *) card2;
+            
+            if ([self.suit isEqualToString:firstCard.suit] && [self.suit isEqualToString:firstCard.suit] )
+            {
+                score = 3;
+            }
+            else if ([self.suit isEqualToString:firstCard.suit])
+            {
+                
+                if (self.rank == secondCard.rank)
+                {
+                    score = 4;
+                }
+                else if (firstCard.rank == secondCard.rank)
+                {
+                    score = 4;
+                }
+                else
+                {
+                    score = 1;
+                }
+                
+            }
+            else if ([self.suit isEqualToString:secondCard.suit])
+            {
+                if (self.rank == firstCard.rank)
+                {
+                    score = 4;
+                }
+                else if (firstCard.rank == secondCard.rank)
+                {
+                    score = 4;
+                }
+                else
+                {
+                    score = 1;
+                }
+            }
+            else if ([secondCard.suit isEqualToString:firstCard.suit])
+            {
+                if (self.rank == firstCard.rank)
+                {
+                    score = 4;
+                }
+                else if (self.rank == secondCard.rank)
+                {
+                    score = 4;
+                }
+                else
+                {
+                    score = 1;
+                }
+            }
+            else if (self.rank == firstCard.rank && self.rank == secondCard.rank )
+            {
+                score = 9;
+            }
+            else if (self.rank == firstCard.rank)
+            {
+                score = 3;
+            }
+            else if (self.rank == secondCard.rank)
+            {
+                score = 3;
+            }
+            else if (firstCard.rank == secondCard.rank)
+            {
+                score = 3;
+            }
+
         }
     }
     return score;

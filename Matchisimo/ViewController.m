@@ -24,6 +24,8 @@
 
 @implementation ViewController
 
+
+
 - (CardMatchingGame *)game
 {
     if (!_game)
@@ -35,18 +37,29 @@
 
 - (IBAction)touchResetButton:(UIButton *)sender {
 
-   _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count] usingDeck:[self myDeck]];
+    _game = nil;
+    
+    _segmentedControl.userInteractionEnabled = YES;
+    
+    [self updateUI];
     
     //if cards are flipped to front, flip them back
     
     self.scoreLabel.text= [NSString stringWithFormat:@"Score: 0"];
+    self.flipsLabel.text = [NSString stringWithFormat:@"Flips: 0"];
+    
+    self.flipCount = 0;
+    //self.score = 0;
     
 }
 
 - (IBAction)touchCardButton:(UIButton *)sender {
     
-    int cardIndex = [self.cardButtons indexOfObject:sender];
-    [self.game chooseCardAtIndex:cardIndex];
+    _segmentedControl.userInteractionEnabled = NO;
+    
+    self.flipCount++;
+    int cardIndex = [self.cardButtons indexOfObject:sender]; //get the index of the card chosen
+    [self.game chooseCardAtIndex:cardIndex forOption:self.segmentedControl.selectedSegmentIndex]; //send the card to the model method
     
     [self updateUI];
     /*UIImage *cardImage = [UIImage imageNamed:@"150px-Card_back-Pandaria.png"];*/
